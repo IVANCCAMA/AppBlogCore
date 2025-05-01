@@ -2,8 +2,9 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using AppBlogCore.Models;
 
-namespace AppBlogCore.Controllers;
+namespace AppBlogCore.Areas.Client.Controllers;
 
+[Area("Client")]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
